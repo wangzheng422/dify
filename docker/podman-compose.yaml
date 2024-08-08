@@ -453,7 +453,7 @@ services:
 
   # Oracle vector database
   oracle:
-    image: docker.io/container-registry.oracle.com/database/free:latest
+    image: container-registry.oracle.com/database/free:latest
     profiles:
       - oracle
     restart: always
