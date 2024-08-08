@@ -440,7 +440,7 @@ services:
 
   # Chroma vector database
   chroma:
-    image: docker.io/ghcr.io/chroma-core/chroma:0.5.1
+    image: ghcr.io/chroma-core/chroma:0.5.1
     profiles:
       - chroma
     restart: always
@@ -469,7 +469,7 @@ services:
   # Milvus vector database services
   etcd:
     container_name: milvus-etcd
-    image: docker.io/quay.io/coreos/etcd:v3.5.5
+    image: quay.io/coreos/etcd:v3.5.5
     profiles:
       - milvus
     environment:
@@ -605,6 +605,6 @@ networks:
     internal: true
   default:
     driver: bridge
-    
+
 volumes:
   oradata:
